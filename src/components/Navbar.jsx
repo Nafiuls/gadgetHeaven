@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "Dashboard", path: "/dashboard" },
   ];
   return (
-    <div className="navbar flex items-center bg-base-100 lg:px-10 lg:py-8">
+    <div className="navbar flex items-center bg-base-100 lg:px-8 lg:py-6">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

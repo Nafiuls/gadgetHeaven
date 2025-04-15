@@ -9,7 +9,7 @@ function MainLayout() {
       {/* navbar */}
       <Navbar />
       {/* dynamic section */}
-      <div className="min-h-[calc(100vh-285px)]">
+      <div className="min-h-screen max-w-7xl mx-auto">
         <Outlet />
       </div>
       {/* footer */}

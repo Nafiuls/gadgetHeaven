@@ -1,0 +1,172 @@
+[
+  {
+    "product_id": "P001",
+    "product_title": "Apple iPhone 15 Pro Max",
+    "product_image": "https://example.com/iphone15promax.jpg",
+    "category": "Smartphones",
+    "price": 1299,
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P002",
+    "product_title": "Samsung Galaxy S24 Ultra",
+    "product_image": "https://example.com/galaxys24ultra.jpg",
+    "category": "Smartphones",
+    "price": 1199,
+    "description": "Unleash the power with Galaxy S24 Ultra's premium features.",
+    "specification": [
+      "6.8-inch QHD+ AMOLED display",
+      "Snapdragon 8 Gen 3",
+      "200MP Quad-camera system",
+      "S Pen support",
+      "1TB storage"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P003",
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://example.com/pixel8pro.jpg",
+    "category": "Smartphones",
+    "price": 999,
+    "description": "Smarter, faster, and more helpful with Google AI.",
+    "specification": [
+      "6.7-inch LTPO OLED display",
+      "Google Tensor G3",
+      "50MP + 48MP + 48MP camera setup",
+      "Titan M2 chip",
+      "512GB storage"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P004",
+    "product_title": "OnePlus 12",
+    "product_image": "https://example.com/oneplus12.jpg",
+    "category": "Smartphones",
+    "price": 799,
+    "description": "Flagship performance with fast charging.",
+    "specification": [
+      "6.82-inch AMOLED 120Hz display",
+      "Snapdragon 8 Gen 3",
+      "50MP Triple camera",
+      "5400mAh battery",
+      "100W fast charging"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P005",
+    "product_title": "Xiaomi 14 Pro",
+    "product_image": "https://example.com/xiaomi14pro.jpg",
+    "category": "Smartphones",
+    "price": 899,
+    "description": "Flagship phone with Leica camera tuning.",
+    "specification": [
+      "6.73-inch LTPO OLED display",
+      "Snapdragon 8 Gen 3",
+      "50MP Leica cameras",
+      "120W HyperCharge",
+      "IP68 water resistance"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "P006",
+    "product_title": "Sony Xperia 1 V",
+    "product_image": "https://example.com/xperia1v.jpg",
+    "category": "Smartphones",
+    "price": 1399,
+    "description": "Pro-grade camera phone with 4K display.",
+    "specification": [
+      "6.5-inch 4K OLED HDR display",
+      "Snapdragon 8 Gen 2",
+      "Triple 48MP cameras",
+      "Hi-Res Audio support",
+      "5,000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_id": "C001",
+    "product_title": "MacBook Pro M3",
+    "product_image": "https://example.com/macbookprom3.jpg",
+    "category": "Computers",
+    "price": 2499,
+    "description": "Supercharged with M3 chip and Liquid Retina XDR display.",
+    "specification": [
+      "14.2-inch Liquid Retina XDR display",
+      "Apple M3 Pro chip",
+      "16GB RAM",
+      "1TB SSD",
+      "macOS Sonoma"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "C002",
+    "product_title": "Dell XPS 15",
+    "product_image": "https://example.com/dellxps15.jpg",
+    "category": "Computers",
+    "price": 1999,
+    "description": "Powerful performance in an ultra-slim design.",
+    "specification": [
+      "15.6-inch FHD+ InfinityEdge display",
+      "Intel Core i9 13th Gen",
+      "32GB RAM",
+      "1TB SSD",
+      "Windows 11 Pro"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "S001",
+    "product_title": "Apple Watch Series 9",
+    "product_image": "https://example.com/applewatch9.jpg",
+    "category": "Smartwatches",
+    "price": 399,
+    "description": "The ultimate tool for a healthy life.",
+    "specification": [
+      "Always-On Retina display",
+      "S9 chip",
+      "Blood oxygen sensor",
+      "Fitness tracking",
+      "WatchOS 10"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "S002",
+    "product_title": "Samsung Galaxy Watch 6",
+    "product_image": "https://example.com/galaxywatch6.jpg",
+    "category": "Smartwatches",
+    "price": 349,
+    "description": "Advanced health tracking with stylish design.",
+    "specification": [
+      "1.5-inch Super AMOLED",
+      "BioActive Sensor",
+      "Sleep tracking",
+      "ECG Monitoring",
+      "Wear OS"
+    ],
+    "availability": true,
+    "rating": 4.5
+  }
+]

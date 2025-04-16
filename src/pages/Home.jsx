@@ -1,9 +1,13 @@
-import React from "react";
 import "../index.css";
+import { Outlet, useLoaderData } from "react-router-dom";
+import Heading from "../components/Heading";
+import Categories from "../components/Categories";
 const Home = () => {
+  const categories = useLoaderData();
+
   return (
     <div>
-      <div className="bg-[#9538e2] rounded-2xl py-20 relative">
+      <div className="bg-[#9538e2] rounded-2xl py-10 relative ">
         {/* content container */}
         <div className="text-center px-20 gap-8  text-white  flex flex-col items-center justify-center h-full">
           <h1 className="max-w-3xl leading-[60px] text-5xl font-bold capitalize">
@@ -14,16 +18,27 @@ const Home = () => {
             next level. From smart devices <br /> to the coolest accessories, we
             have it all!
           </p>
-          <button className="py-3 px-6 font-semibold cursor-pointer hover:bg-transparent hover:border-[2px] transition-all hover:text-white rounded-full bg-white text-purple-600">
+          <button className="mb-20 py-3 px-6 font-semibold cursor-pointer hover:bg-transparent hover:border-[2px] transition-all hover:text-white rounded-full bg-white text-purple-600">
             Shop Now!
           </button>
         </div>
         {/* image container */}
-        <div className="p-3 absolute left-0 right-0 py-3 backdrop-blur-lg rounded-md top-[400px] border border-white w-[80%] mx-auto">
+        <div className="p-3 left-0 right-0 top-[200px] py-3 backdrop-blur-lg rounded-md border border-white w-[80%] mx-auto">
           <div className="bg-img"></div>
         </div>
       </div>
       {/* others content */}
+      <div className="my-12">
+        <Heading main="explore cutting-edge gadgets" />
+        <div className="flex lg:flex-row flex-col gap-10 justify-center ">
+          <div className="lg:w-[20%] w-full">
+            <Categories categories={categories} />
+          </div>
+          <div className="lg:w-[70%] w-full grid grid-cols-1 lg:grid-cols-3">
+            <Outlet />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

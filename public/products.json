@@ -2,7 +2,7 @@
   {
     "product_id": "P001",
     "product_title": "Apple iPhone 15 Pro Max",
-    "product_image": "https://example.com/iphone15promax.jpg",
+    "product_image": "https://i.ibb.co.com/CpZ01RZT/i-Phone-15-Plus-2-6-5363.jpg",
     "category": "Smartphones",
     "price": 1299,
     "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
@@ -19,7 +19,7 @@
   {
     "product_id": "P002",
     "product_title": "Samsung Galaxy S24 Ultra",
-    "product_image": "https://example.com/galaxys24ultra.jpg",
+    "product_image": "https://i.ibb.co.com/Q3kQmd99/samsung-galaxy-s24-ultra-titanium-gray-official-image.webp",
     "category": "Smartphones",
     "price": 1199,
     "description": "Unleash the power with Galaxy S24 Ultra's premium features.",
@@ -36,7 +36,7 @@
   {
     "product_id": "P003",
     "product_title": "Google Pixel 8 Pro",
-    "product_image": "https://example.com/pixel8pro.jpg",
+    "product_image": "https://i.ibb.co.com/yFMSqzrD/google-pixel-8-pro.png",
     "category": "Smartphones",
     "price": 999,
     "description": "Smarter, faster, and more helpful with Google AI.",
@@ -53,7 +53,7 @@
   {
     "product_id": "P004",
     "product_title": "OnePlus 12",
-    "product_image": "https://example.com/oneplus12.jpg",
+    "product_image": "https://i.ibb.co.com/mCMjdXF9/One-Plus-12-5-G-2.jpg",
     "category": "Smartphones",
     "price": 799,
     "description": "Flagship performance with fast charging.",
@@ -70,7 +70,7 @@
   {
     "product_id": "P005",
     "product_title": "Xiaomi 14 Pro",
-    "product_image": "https://example.com/xiaomi14pro.jpg",
+    "product_image": "https://i.ibb.co.com/CKSb7yz6/Xiaomi-14-Pro.jpg",
     "category": "Smartphones",
     "price": 899,
     "description": "Flagship phone with Leica camera tuning.",
@@ -87,7 +87,7 @@
   {
     "product_id": "P006",
     "product_title": "Sony Xperia 1 V",
-    "product_image": "https://example.com/xperia1v.jpg",
+    "product_image": "https://i.ibb.co.com/spXJGZd3/Sony-Xperia-1-V.jpg",
     "category": "Smartphones",
     "price": 1399,
     "description": "Pro-grade camera phone with 4K display.",
@@ -104,7 +104,7 @@
   {
     "product_id": "C001",
     "product_title": "MacBook Pro M3",
-    "product_image": "https://example.com/macbookprom3.jpg",
+    "product_image": "https://i.ibb.co.com/rRQGvBDq/Apple-Mac-Book-Pro-M3-Pro-16-inch-Space-Black.jpg",
     "category": "Computers",
     "price": 2499,
     "description": "Supercharged with M3 chip and Liquid Retina XDR display.",
@@ -121,7 +121,7 @@
   {
     "product_id": "C002",
     "product_title": "Dell XPS 15",
-    "product_image": "https://example.com/dellxps15.jpg",
+    "product_image": "https://i.ibb.co.com/1fLwVLS2/Dell-XPS-15-4-6.jpg",
     "category": "Computers",
     "price": 1999,
     "description": "Powerful performance in an ultra-slim design.",
@@ -138,7 +138,7 @@
   {
     "product_id": "S001",
     "product_title": "Apple Watch Series 9",
-    "product_image": "https://example.com/applewatch9.jpg",
+    "product_image": "https://i.ibb.co.com/Jjwd9ZSn/Apple-Watch-Series-9-3-6716.jpg",
     "category": "Smartwatches",
     "price": 399,
     "description": "The ultimate tool for a healthy life.",
@@ -155,7 +155,7 @@
   {
     "product_id": "S002",
     "product_title": "Samsung Galaxy Watch 6",
-    "product_image": "https://example.com/galaxywatch6.jpg",
+    "product_image": "https://i.ibb.co.com/Y7CwwfFd/Galaxy-Watch6-Gold-5232.jpg",
     "category": "Smartwatches",
     "price": 349,
     "description": "Advanced health tracking with stylish design.",

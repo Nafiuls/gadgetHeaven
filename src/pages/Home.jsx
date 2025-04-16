@@ -34,7 +34,7 @@ const Home = () => {
           <div className="lg:w-[20%] w-full">
             <Categories categories={categories} />
           </div>
-          <div className="lg:w-[70%] w-full grid grid-cols-1 lg:grid-cols-3">
+          <div className="w-full">
             <Outlet />
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import RatingDisplay from "../components/RatingDisplay";
-import { addCart, getProducts } from "../utils";
+import { addCart, addWishlist } from "../utils";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -23,6 +23,10 @@ const ProductDetails = () => {
   // handle add to cart function
   const handleAddToCart = (product) => {
     addCart(product);
+  };
+  // handle add to wishlist fnc
+  const handleAddToWishlist = (product) => {
+    addWishlist(product);
   };
   return (
     <div className="min-h-screen relative">
@@ -95,7 +99,10 @@ const ProductDetails = () => {
               </svg>
             </button>
             {/* wishlist button */}
-            <button className="text-gray-500 hover:text-gray-700 cursor-pointer">
+            <button
+              onClick={() => handleAddToWishlist(product)}
+              className="text-gray-500 hover:text-gray-700 cursor-pointer"
+            >
               <svg
                 className="w-6 h-6"
                 fill="none"

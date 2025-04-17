@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import RatingDisplay from "../components/RatingDisplay";
+import { addCart, getProducts } from "../utils";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -13,13 +14,16 @@ const ProductDetails = () => {
   const {
     product_title,
     product_image,
-    category,
     price,
     description,
     specification,
     availability,
     rating,
   } = product || {};
+  // handle add to cart function
+  const handleAddToCart = (product) => {
+    addCart(product);
+  };
   return (
     <div className="min-h-screen relative">
       <div className="h-[300px] bg-[#9538e2]">
@@ -67,7 +71,7 @@ const ProductDetails = () => {
               </p>
               <ul className="list-decimal list-inside text-sm text-gray-700 mt-1 space-y-1">
                 {specification?.map((item) => (
-                  <li>{item}</li>
+                  <li key={item}>{item}</li>
                 ))}
               </ul>
             </div>
@@ -80,13 +84,18 @@ const ProductDetails = () => {
 
           {/* Buttons */}
           <div className="mt-4 flex items-center gap-3">
-            <button className="bg-purple-600 text-white px-4 py-2 text-sm rounded-lg flex items-center gap-2 hover:bg-purple-700">
+            {/* add to cart button*/}
+            <button
+              onClick={() => handleAddToCart(product)}
+              className="bg-purple-600 text-white cursor-pointer px-4 py-2 text-sm rounded-lg flex items-center gap-2 hover:bg-purple-700"
+            >
               Add To Cart
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M16 6a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V6zm-2 0v10H6V6h8zM8 8a1 1 0 000 2h4a1 1 0 100-2H8z" />
               </svg>
             </button>
-            <button className="text-gray-500 hover:text-gray-700">
+            {/* wishlist button */}
+            <button className="text-gray-500 hover:text-gray-700 cursor-pointer">
               <svg
                 className="w-6 h-6"
                 fill="none"

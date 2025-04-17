@@ -6,7 +6,7 @@ const Home = () => {
   const categories = useLoaderData();
 
   return (
-    <div>
+    <div className="px-20">
       <div className="bg-[#9538e2] rounded-2xl py-10 relative ">
         {/* content container */}
         <div className="text-center px-20 gap-8  text-white  flex flex-col items-center justify-center h-full">

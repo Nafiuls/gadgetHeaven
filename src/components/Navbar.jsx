@@ -34,7 +34,13 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content flex flex-col gap-5 bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             {navlinks.map((item) => (
-              <NavLink key={item.name} to={item.path}>
+              <NavLink
+                className={({ isActive }) =>
+                  `${isActive ? "text-[#9538e2] font-bold" : ""}`
+                }
+                key={item.name}
+                to={item.path}
+              >
                 {item.name}
               </NavLink>
             ))}
@@ -45,7 +51,13 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal flex gap-10 font-semibold">
           {navlinks.map((item) => (
-            <NavLink key={item.name} to={item.path}>
+            <NavLink
+              className={({ isActive }) =>
+                `${isActive ? "text-[#9538e2] font-bold" : ""}`
+              }
+              key={item.name}
+              to={item.path}
+            >
               {item.name}
             </NavLink>
           ))}

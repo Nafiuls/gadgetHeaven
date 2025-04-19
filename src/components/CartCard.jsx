@@ -1,7 +1,7 @@
 import React from "react";
 
-const CartCard = ({ item }) => {
-  const { product_title, description, price, product_image } = item;
+const CartCard = ({ item, handleRemove }) => {
+  const { product_id, product_title, description, price, product_image } = item;
 
   return (
     <div class="bg-white rounded-md shadow-md p-4 ">
@@ -21,7 +21,10 @@ const CartCard = ({ item }) => {
             <p class="text-md font-medium text-gray-900">Price: $ {price}</p>
           </div>
         </div>
-        <button class="text-red-500 hover:text-red-700 cursor-pointer focus:outline-none">
+        <button
+          onClick={() => handleRemove(product_id)}
+          class="text-red-500 hover:text-red-700 cursor-pointer focus:outline-none"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"

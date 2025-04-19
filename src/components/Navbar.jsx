@@ -1,15 +1,16 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { FaCartShopping, FaHeart } from "react-icons/fa6";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
   const navlinks = [
     { name: "Home", path: "/" },
     { name: "Statistic", path: "/statistic" },
     { name: "Dashboard", path: "/dashboard" },
   ];
   return (
-    <div className="navbar flex items-center bg-base-100 lg:px-8 lg:py-6">
+    <div className="navbar bg-transparent flex items-center  lg:px-8 lg:py-6">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +37,7 @@ const Navbar = () => {
             {navlinks.map((item) => (
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-[#9538e2] font-bold" : ""}`
+                  `${isActive ? "text-yellow-400 font-bold" : ""}`
                 }
                 key={item.name}
                 to={item.path}
@@ -46,14 +47,20 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">GadgetHeaven</a>
+        <a
+          className={`btn btn-ghost text-xl ${
+            pathname == "/" ? "text-white" : ""
+          }`}
+        >
+          GadgetHeaven
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal flex gap-10 font-semibold">
           {navlinks.map((item) => (
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-[#9538e2] font-bold" : ""}`
+                `${isActive ? "text-yellow-400 font-bold" : ""}`
               }
               key={item.name}
               to={item.path}

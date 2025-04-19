@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getProducts } from "../utils";
+import { getProducts, removeCart } from "../utils";
 import CartCard from "../components/CartCard";
 
 const Cart = () => {
@@ -9,6 +9,12 @@ const Cart = () => {
     const products = getProducts();
     setProducts(products);
   }, []);
+
+  const handleRemove = (id) => {
+    removeCart(id);
+    const products = getProducts();
+    setProducts(products);
+  };
 
   const totalPrice = products.reduce((acc, cv) => acc + cv.price, 0);
 
@@ -35,7 +41,11 @@ const Cart = () => {
       {/*  */}
       <div className="flex flex-col gap-3 my-12">
         {products.map((item) => (
-          <CartCard key={item.product_id} item={item} />
+          <CartCard
+            handleRemove={handleRemove}
+            key={item.product_id}
+            item={item}
+          />
         ))}
       </div>
     </div>

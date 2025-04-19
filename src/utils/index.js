@@ -17,13 +17,18 @@ const addCart = (product) => {
   const cart = getProducts();
   const isExist = cart.find((item) => item.product_id === product.product_id);
   if (isExist) return toast.error("Already added to cart");
-  console.log(cart);
   cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
   toast.success("Successfully added");
 };
 
 // remove product from local storage
+const removeCart = (id) => {
+  const cart = getProducts();
+  const remaining = cart.filter((item) => item.product_id != id);
+  localStorage.setItem("cart", JSON.stringify(remaining));
+  toast.success("Successfully removed");
+};
 
 // get wihslist
 const getWishlist = () => {
@@ -50,4 +55,4 @@ const addWishlist = (product) => {
 };
 
 // remove from wishlist
-export { addCart, getProducts, addWishlist };
+export { addCart, getProducts, addWishlist, removeCart };

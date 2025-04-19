@@ -2,12 +2,16 @@ import "../index.css";
 import { Outlet, useLoaderData } from "react-router-dom";
 import Heading from "../components/Heading";
 import Categories from "../components/Categories";
+import Navbar from "../components/Navbar";
 const Home = () => {
   const categories = useLoaderData();
 
   return (
-    <div className="px-20">
-      <div className="bg-[#9538e2] rounded-2xl py-10 relative ">
+    <div className="px-20 my-5">
+      <div className="bg-[#9538e2] rounded-2xl py-5 relative ">
+        <div>
+          <Navbar />
+        </div>
         {/* content container */}
         <div className="text-center px-20 gap-8  text-white  flex flex-col items-center justify-center h-full">
           <h1 className="max-w-3xl leading-[60px] text-5xl font-bold capitalize">

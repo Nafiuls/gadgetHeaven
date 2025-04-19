@@ -11,7 +11,7 @@ function MainLayout() {
       {/* navbar */}
       <Navbar />
       {/* dynamic section */}
-      <div className="min-h-screen px-20">
+      <div className="min-h-screen ">
         <Outlet />
       </div>
       {/* footer */}

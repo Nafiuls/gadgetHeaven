@@ -1,15 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import RatingDisplay from "../components/RatingDisplay";
-import { addCart, addWishlist } from "../utils";
+import { addCart, addWishlist, getProducts } from "../utils";
 
 const ProductDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
   const [product, setProduct] = useState({});
+  const [isCart, setIsCart] = useState(false);
   useEffect(() => {
     const singleProduct = data.find((product) => product.product_id === id);
     setProduct(singleProduct);
+    const cartItems = getProducts();
+    const isExist = cartItems.find(
+      (item) => item.product_id === singleProduct.product_id
+    );
+    if (isExist) {
+      setIsCart(true);
+    }
   }, [data, id]);
   const {
     product_title,
@@ -23,6 +31,7 @@ const ProductDetails = () => {
   // handle add to cart function
   const handleAddToCart = (product) => {
     addCart(product);
+    setIsCart(true);
   };
   // handle add to wishlist fnc
   const handleAddToWishlist = (product) => {
@@ -90,8 +99,9 @@ const ProductDetails = () => {
           <div className="mt-4 flex items-center gap-3">
             {/* add to cart button*/}
             <button
+              disabled={isCart}
               onClick={() => handleAddToCart(product)}
-              className="bg-purple-600 text-white cursor-pointer px-4 py-2 text-sm rounded-lg flex items-center gap-2 hover:bg-purple-700"
+              className="btn btn-primary text-white cursor-pointer px-4 py-2 text-sm rounded-lg flex items-center gap-2 hover:bg-purple-700"
             >
               Add To Cart
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

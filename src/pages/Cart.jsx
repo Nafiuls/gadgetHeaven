@@ -16,6 +16,11 @@ const Cart = () => {
     setProducts(products);
   };
 
+  const handleSort = () => {
+    const sorted = [...products].sort((a, b) => b.price - a.price);
+    setProducts(sorted);
+  };
+
   const totalPrice = products.reduce((acc, cv) => acc + cv.price, 0);
 
   return (
@@ -29,7 +34,10 @@ const Cart = () => {
             </h1>
           </div>
           <div className="flex lg:flex-row flex-col items-center gap-2">
-            <button className=" hover:bg-[#9538e2] hover:text-white transition-all cursor-pointer font-semibold border-2 border-[#9538e2] text-[#9538e2] px-5 py-1 rounded-full">
+            <button
+              onClick={() => handleSort()}
+              className=" hover:bg-[#9538e2] hover:text-white transition-all cursor-pointer font-semibold border-2 border-[#9538e2] text-[#9538e2] px-5 py-1 rounded-full"
+            >
               Sort By Price
             </button>
             <button className=" hover:bg-[#9538e2] hover:text-white transition-all cursor-pointer font-semibold border-2 border-[#9538e2] text-[#9538e2] px-5 py-1 rounded-full">

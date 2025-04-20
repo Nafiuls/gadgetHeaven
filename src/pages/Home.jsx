@@ -7,7 +7,7 @@ const Home = () => {
   const categories = useLoaderData();
 
   return (
-    <div className="px-20 my-5">
+    <div className="lg:px-20 my-5">
       <div className="bg-[#9538e2] rounded-2xl py-5 relative ">
         <div>
           <Navbar />
@@ -27,12 +27,10 @@ const Home = () => {
           </button>
         </div>
         {/* image container */}
-        <div className="p-3 left-0 right-0 top-[200px] py-3 backdrop-blur-lg rounded-md border border-white w-[80%] mx-auto">
-          <div className="bg-img"></div>
-        </div>
+        <div className="p-10 left-0 bg-img absolute h-[300px] right-0 lg:top-[430px] py-3 backdrop-blur-lg rounded-md border border-white w-[80%] mx-auto"></div>
       </div>
       {/* others content */}
-      <div className="my-12">
+      <div className="my-[300px]">
         <Heading main="explore cutting-edge gadgets" />
         <div className="flex lg:flex-row flex-col gap-10 justify-center ">
           <div className="lg:w-[20%] w-full">

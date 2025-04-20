@@ -9,8 +9,8 @@ const WishlistCard = ({ item, handleRemove }) => {
   return (
     <div class="bg-white rounded-md shadow-md p-4 ">
       <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-4">
-          <div class="w-40   bg-gray-200 rounded-md">
+        <div class="flex lg:flex-row flex-col items-center space-x-4">
+          <div class="lg:w-40 w-full bg-gray-200 rounded-md">
             <img
               className="h-full w-full"
               src={product_image}

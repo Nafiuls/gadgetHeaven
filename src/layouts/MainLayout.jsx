@@ -12,7 +12,7 @@ function MainLayout() {
       {/* navbar */}
       <div>{pathname !== "/" && <Navbar />}</div>
       {/* dynamic section */}
-      <div className="min-h-screen ">
+      <div className="min-h-screen lg:p-0 p-3 ">
         <Outlet />
       </div>
       {/* footer */}

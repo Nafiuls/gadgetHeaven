@@ -8,6 +8,7 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "Statistic", path: "/statistic" },
     { name: "Dashboard", path: "/dashboard" },
+    { name: "About", path: "/about" },
   ];
   return (
     <div className="navbar bg-transparent flex items-center  lg:px-8 lg:py-6">

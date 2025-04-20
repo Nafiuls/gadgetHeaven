@@ -1,10 +1,14 @@
 import React from "react";
 import Heading from "../components/Heading";
 import { NavLink, Outlet } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Dashboard = () => {
   return (
     <div>
+      <Helmet>
+        <title>GadgetMania | Dashboard</title>
+      </Helmet>
       {/* dashboard banner content */}
       <div className="h-[300px] flex items-center flex-col justify-center bg-[#9538e2] text-white">
         <Heading

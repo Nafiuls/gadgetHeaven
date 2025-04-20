@@ -1,10 +1,15 @@
 import React from "react";
+import Heading from "./Heading";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer sm:footer-horizontal mt-12 bg-base-200 text-base-content p-10">
-        <nav>
+    <div className="pt-10 bg-base-200">
+      <div>
+        <Heading main="gadget heaven" />
+      </div>
+      <hr className="mx-20 border-gray-800" />
+      <footer className="footer flex lg:flex-row flex-col lg:justify-around  sm:footer-horizontal mt-12 bg-base-200 text-base-content p-10">
+        <nav className="">
           <h6 className="footer-title">Services</h6>
           <a className="link link-hover">Branding</a>
           <a className="link link-hover">Design</a>

@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import RatingDisplay from "../components/RatingDisplay";
-import { addCart, addWishlist, getProducts } from "../utils";
+import { addCart, addWishlist, getProducts, getWishlist } from "../utils";
 
 const ProductDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
   const [product, setProduct] = useState({});
   const [isCart, setIsCart] = useState(false);
+  const [isWishlist, setWishlist] = useState(false);
   useEffect(() => {
     const singleProduct = data.find((product) => product.product_id === id);
     setProduct(singleProduct);
@@ -17,6 +18,13 @@ const ProductDetails = () => {
     );
     if (isExist) {
       setIsCart(true);
+    }
+    const wihslist = getWishlist();
+    const isWishlist = wihslist.find(
+      (item) => item.product_id === singleProduct.product_id
+    );
+    if (isWishlist) {
+      setWishlist(true);
     }
   }, [data, id]);
   const {
@@ -36,6 +44,7 @@ const ProductDetails = () => {
   // handle add to wishlist fnc
   const handleAddToWishlist = (product) => {
     addWishlist(product);
+    setWishlist(true);
   };
   return (
     <div className="min-h-screen relative">
@@ -110,8 +119,9 @@ const ProductDetails = () => {
             </button>
             {/* wishlist button */}
             <button
+              disabled={isWishlist}
               onClick={() => handleAddToWishlist(product)}
-              className="text-gray-500 hover:text-gray-700 cursor-pointer"
+              className="btn btn-primary rounded-full cursor-pointer"
             >
               <svg
                 className="w-6 h-6"

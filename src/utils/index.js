@@ -30,6 +30,11 @@ const removeCart = (id) => {
   toast.success("Successfully removed");
 };
 
+// remove all cart items
+const clearCart = () => {
+  localStorage.removeItem("cart");
+};
+
 // get wihslist
 const getWishlist = () => {
   const all = localStorage.getItem("wishlist");
@@ -69,4 +74,5 @@ export {
   removeCart,
   getWishlist,
   removeWishlist,
+  clearCart,
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FaCartShopping, FaHeart } from "react-icons/fa6";
 
 const Navbar = () => {
@@ -52,7 +52,7 @@ const Navbar = () => {
             pathname == "/" ? "text-white" : ""
           }`}
         >
-          GadgetHeaven
+          GadgetMania
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -71,12 +71,16 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end text-white flex items-center gap-2">
-        <button className="p-2 cursor-pointer rounded-full bg-black">
-          <FaCartShopping size={20} />
-        </button>
-        <button className="p-2 cursor-pointer rounded-full bg-black">
-          <FaHeart size={20} />
-        </button>
+        <Link to={"/dashboard/cart"}>
+          <button className="p-2 cursor-pointer rounded-full bg-black">
+            <FaCartShopping size={20} />
+          </button>
+        </Link>
+        <Link to={"/dashboard/wishlist"}>
+          <button className="p-2 cursor-pointer rounded-full bg-black">
+            <FaHeart size={20} />
+          </button>
+        </Link>
       </div>
     </div>
   );

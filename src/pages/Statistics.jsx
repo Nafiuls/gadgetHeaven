@@ -1,7 +1,12 @@
 import React from "react";
+import StaticChart from "../components/StaticChart";
 
 const Statistics = () => {
-  return <div>this is statistics page</div>;
+  return (
+    <div>
+      <StaticChart />
+    </div>
+  );
 };
 
 export default Statistics;

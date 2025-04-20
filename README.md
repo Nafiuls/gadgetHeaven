@@ -1,12 +1,40 @@
-# React + Vite
+# Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Website](https://img.shields.io/badge/Live%20Website-Online-brightgreen)](https://cheerful-chebakia-9d9982.netlify.app/)
+[![Requirements Document](https://img.shields.io/badge/Requirements-Document-blue)](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)
 
-Currently, two official plugins are available:
+> Your one-stop destination for the latest and greatest gadgets!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
 
-## Expanding the ESLint configuration
+Gadget Heaven is a cutting-edge e-commerce web application designed to provide users with a seamless and enjoyable experience when shopping for their favorite gadgets. This site is built with React.js, and implements a variety of features, from product sorting and categorization to a full shopping cart and wishlist system.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Key Features
+
+Here are some of the standout features of Gadget Heaven:
+
+- **Sorting:** Easily sort products to find exactly what you're looking for.
+- **Categories:** Browse gadgets by category for a more streamlined shopping experience.
+- **Cart & Wishlist:** Add products to your cart for purchase or save them to your wishlist for later.
+- **Purchase Feature:** A smooth and intuitive process to complete your gadget purchases.
+- **Statistics Feature:** View key data and insights, enhancing the user experience.
+
+## Tech Stack
+
+Gadget Heaven is built using the following technologies:
+
+- React.js: A dynamic JavaScript library for building user interfaces.
+- React Router: Utilized for routing and navigation.
+- Local Storage: Used for managing data.
+
+## React Fundamental Concepts
+
+The following React.js concepts were used in the development of Gadget Heaven:
+
+- useState: For managing component state and creating interactive UIs.
+- Reusable Components: The application is built using reusable components to promote maintainability.
+- React Router: For creating a Single Page Application with seamless navigation.
+- Nested Routing: Organizing the application's pages in a hierarchical structure.
+- useNavigate: For navigating between different routes.
+- useLocation: For accessing information about the current URL.
+- Local Storage: Data persistence is handled using local storage.
